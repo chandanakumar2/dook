@@ -1,0 +1,53 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+    string STR=" ";
+    char PAT[100],REP[100],ANS[100];
+    int i,j,c,m,k,flag=0;
+    cout<<"Enter the main string:";
+    getline(cin,STR);
+    cout<<"Enter the pattern string:";
+    cin>>PAT;
+    cout<<"Enter the replace string:";
+    cin>>REP;
+    i=m=c=j=0;
+    while(STR[c]!='\0')
+    {
+        if(STR[m]==PAT[i])
+        {
+            i++,m++;
+            flag=1;
+            if(PAT[i]=='\0')
+            {
+                for(k=0;REP[k]!='\0';k++,j++)
+                ANS[j]=REP[k];
+                i=0;
+                c=m;
+            }
+        }
+        else
+        {
+            ANS[j]=STR[c];
+            j++;c++;m=c;i=0;
+        }
+    }
+    if(flag==0)
+    {
+        cout<<"pattern not found";
+    }
+    else
+    {
+        cout<<"The resultant string is:"<<ANS;
+    }
+}
+
+OUTPUT:
+
+
+Enter the main string:The english word is of Germanic origin,and historically refers to Germanic king in the preChristian period a type of terible king
+Enter the pattern string:king
+Enter the replace string:queen
+The resultant string is:The english word is of Germanic origin,and historically refers to Germanic queen in the preChristian period a type of terible queen

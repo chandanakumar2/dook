@@ -1,0 +1,31 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    int n;
+    string a[]={"zero","one","two","three","four","five","six","seven","eight","nine"};
+    string b[]={"Ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","ninteen"};
+    string c[]={"Twenty","Twenty one","Twenty two","Twenty three","Twenty four","Twenty five","Twenty six","Twenty seven","Twenty eight","Twenty nine"};
+    cout<<"Enter the integer value:";
+    cin>>n;
+    if(n<=9)
+    cout<<a[n];
+    else if(n>9 && n<=19)
+    {
+        n=n-10;
+        cout<<b[n];
+    }
+    else if(n>19 && n<=29)
+    {
+        n=n-20;
+        cout<<c[n];
+    }
+    else
+    cout<<"Invalid input";
+}
+
+OUTPUT:
+
+Enter the integer value:23
+Twenty three

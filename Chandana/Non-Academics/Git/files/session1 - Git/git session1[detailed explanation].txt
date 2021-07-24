@@ -1,0 +1,256 @@
+Microsoft Windows [Version 10.0.19042.685]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\CHANDANA  M K>git --version
+git version 2.32.0.windows.2
+
+C:\Users\CHANDANA  M K>git config --global user.name "Chandana-M-K
+
+C:\Users\CHANDANA  M K>git config --global user.email "chandanamk114@gmail.com"
+
+C:\Users\CHANDANA  M K>ls
+'3D Objects'         Documents        'My Documents'                                                                                  OneDrive       SendTo            ntuser.ini
+ AppData             Downloads         NTUSER.DAT                                                                                     Pictures      'Start Menu'
+'Application Data'   Favorites         NTUSER.DAT{bd35c8bc-5a1a-11eb-8330-8cec4b123551}.TM.blf                                        PrintHood      Templates
+ Contacts            Links             NTUSER.DAT{bd35c8bc-5a1a-11eb-8330-8cec4b123551}.TMContainer00000000000000000001.regtrans-ms   Recent         Videos
+ Cookies            'Local Settings'   NTUSER.DAT{bd35c8bc-5a1a-11eb-8330-8cec4b123551}.TMContainer00000000000000000002.regtrans-ms  'Saved Games'   ntuser.dat.LOG1
+ Desktop             Music             NetHood                                                                                        Searches       ntuser.dat.LOG2
+
+C:\Users\CHANDANA  M K>cd Desktop  
+
+C:\Users\CHANDANA  M K\Desktop>mkdir India    {CONFIRM here by seeing ur desktop where India named folder is created}
+
+C:\Users\CHANDANA  M K\Desktop>cd India      {Here u changed changed directory to India bcoz from now onwards u work with the folder "India"}
+
+C:\Users\CHANDANA  M K\Desktop\India>touch karnataka.txt   {CONFIRM here by opening the folder "India", where "karnataka" named file is created} 
+
+C:\Users\CHANDANA  M K\Desktop\India>git init
+Initialized empty Git repository in C:/Users/CHANDANA  M K/Desktop/India/.git/
+
+C:\Users\CHANDANA  M K\Desktop\India>ls
+karnataka.txt
+
+C:\Users\CHANDANA  M K\Desktop\India>ls -a
+.  ..  .git  karnataka.txt
+  
+
+{ Go to file named "karnataka" and add the data whatever u want and save it}
+
+
+
+C:\Users\CHANDANA  M K\Desktop\India>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        karnataka.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\CHANDANA  M K\Desktop\India>git add karnataka.txt
+
+C:\Users\CHANDANA  M K\Desktop\India>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   karnataka.txt
+
+
+C:\Users\CHANDANA  M K\Desktop\India>git commit -m"Added karnataka file"
+[master (root-commit) 80100e1] Added karnataka file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 karnataka.txt
+
+
+C:\Users\CHANDANA  M K\Desktop\India>git log
+commit 80100e1d89e8c06f4b26f2ba404006ab8a2e386f (HEAD -> master)
+Author: Chandana-M-K <chandanamk114@gmail.com>
+Date:   Thu Jul 22 00:56:14 2021 +0530
+
+    Added karnataka file
+
+{This is the procedure to create a file using git and add file to the git}
+
+{let us create another file like this, So we will be fluent in this}
+
+
+C:\Users\CHANDANA  M K\Desktop\India>touch humans.txt
+
+C:\Users\CHANDANA  M K\Desktop\India>git init
+Reinitialized existing Git repository in C:/Users/CHANDANA  M K/Desktop/India/.git/
+
+C:\Users\CHANDANA  M K\Desktop\India>ls
+humans.txt  karnataka.txt
+
+C:\Users\CHANDANA  M K\Desktop\India>ls -a
+.  ..  .git  humans.txt  karnataka.txt
+
+C:\Users\CHANDANA  M K\Desktop\India>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        humans.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\CHANDANA  M K\Desktop\India>git add humans.txt
+
+C:\Users\CHANDANA  M K\Desktop\India>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   humans.txt
+
+
+C:\Users\CHANDANA  M K\Desktop\India>git commit -m"Added humans file"
+[master 1e68537] Added humans file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 humans.txt
+
+C:\Users\CHANDANA  M K\Desktop\India>git log
+commit 1e6853784676c7052175146a669086d035de2956 (HEAD -> master)
+Author: Chandana-M-K <chandanamk114@gmail.com>
+Date:   Thu Jul 22 01:06:51 2021 +0530
+
+    Added humans file
+
+commit 80100e1d89e8c06f4b26f2ba404006ab8a2e386f
+Author: Chandana-M-K <chandanamk114@gmail.com>
+Date:   Thu Jul 22 00:56:14 2021 +0530
+
+    Added karnataka file
+
+{This how we created another file}
+
+C:\Users\CHANDANA  M K\Desktop\India>git log
+commit 1e6853784676c7052175146a669086d035de2956 (HEAD -> master)
+Author: Chandana-M-K <chandanamk114@gmail.com>
+Date:   Thu Jul 22 01:06:51 2021 +0530
+
+    Added humans file
+
+commit 80100e1d89e8c06f4b26f2ba404006ab8a2e386f
+Author: Chandana-M-K <chandanamk114@gmail.com>
+Date:   Thu Jul 22 00:56:14 2021 +0530
+
+    Added karnataka file
+
+{Now open the files and add or delete some thing in that file and save it}
+{If u modified both the file use the [COMMAND:git add .]  or else if u modified 1 specified file then use [git add file-name.txt]}
+
+
+C:\Users\CHANDANA  M K\Desktop\India>git add .
+
+C:\Users\CHANDANA  M K\Desktop\India>git commit -m"Added modified karnataka and humans file"
+[master 0228202] Added modified karnataka and humans file
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\CHANDANA  M K\Desktop\India>git log
+commit 02282025c369692b2379ec64b7e248fea6eab508 (HEAD -> master)
+Author: Chandana-M-K <chandanamk114@gmail.com>
+Date:   Thu Jul 22 01:24:16 2021 +0530
+
+    Added modified karnataka and humans file
+
+commit 1e6853784676c7052175146a669086d035de2956
+Author: Chandana-M-K <chandanamk114@gmail.com>
+Date:   Thu Jul 22 01:06:51 2021 +0530
+
+    Added humans file
+
+commit 80100e1d89e8c06f4b26f2ba404006ab8a2e386f
+Author: Chandana-M-K <chandanamk114@gmail.com>
+Date:   Thu Jul 22 00:56:14 2021 +0530
+
+    Added karnataka file
+
+{ now we will checkout the karnata file code but humans named file got deleted}
+
+C:\Users\CHANDANA  M K\Desktop\India>git checkout 80100e1d89e8c06f4b26f2ba404006ab8a2e386f
+Note: switching to '80100e1d89e8c06f4b26f2ba404006ab8a2e386f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 80100e1 Added karnataka file
+
+
+
+
+
+
+
+{before the COMMAND git add .    ->Mandya
+                                  Mysore
+
+this thing is saved in the file  But I gone there and and some line that are shown below and saved that file
+Mandya
+Mysore
+=======
+Banglore
+
+Do this this thing bcoz after merging u will see the deleted "humans" file and modied "karnataka" file as,
+
+Mandya
+Mysore
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> master
+Banglore
+
+}
+
+
+
+
+C:\Users\CHANDANA  M K\Desktop\India>git branch
+* (HEAD detached at 80100e1)
+  master
+
+C:\Users\CHANDANA  M K\Desktop\India>git add .
+
+C:\Users\CHANDANA  M K\Desktop\India>git commit -m"Modified karnataka file is added"
+[detached HEAD 9091fb1] Modified karnataka file is added
+ 1 file changed, 2 insertions(+)
+
+C:\Users\CHANDANA  M K\Desktop\India>git merge master
+Auto-merging karnataka.txt
+CONFLICT (content): Merge conflict in karnataka.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\CHANDANA  M K\Desktop\India>git branch
+* (HEAD detached from 80100e1)
+  master
+
+C:\Users\CHANDANA  M K\Desktop\India>git status
+HEAD detached from 80100e1
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   humans.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   karnataka.txt
+
+

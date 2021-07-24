@@ -1,0 +1,20 @@
+1)git --version  -> {shows the version of ur git}
+2)git config --global user.name "USER-NAME    -> {to write user name. NOTE:don't give space or full-stop b\w the letters 
+                                               eg:"Chandana M K(this leads to error in feature).Instead type "Chandana-M-K}
+
+3)git config --global user.email "Email id"   
+4)ls -> {Shows the folders and file list}
+5)cd -> {Used  to change directory to the desktop/folder}
+6)mkdir -> {Used to create folder in the changed directory}-{To confirm this u can see the new folder in ur desktop[if changed ur directory to desktop]}
+7)touch fil-name.txt -> {baically touch is used to create a file}
+8)git init  -> {Creates a new git repository}
+9)ls -a  -> {shows the list of hidden file(basically git is hidden)}
+10)git status  -> {Shows the current status of the git}
+11)[git add file-name.txt]  OR  [git add .] -> {Used to add file to the git}
+12)git commit -m"some text about update u did"  ->  {Used to add untracked files to git}
+13)git log   ->  {Displays a record of the commits in a Git repository}
+14)cd...     ->  {Used to change the current working directory in various operating system}
+15)git checkout hash-value  -> {lets you navigate b/w the branches created by git branch}
+16)git branch  ->  {git branches are effictively a pointer to a snapshot of your changes ... instead of copying files from the directory to
+                    directory,git stores a branch as a reference to a commit}
+17)git merge master  ->  {used to merge the branches}
